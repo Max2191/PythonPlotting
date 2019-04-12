@@ -1,3 +1,4 @@
+import numpy as np
 import matplotlib.pyplot as plt
 from math import *
 
@@ -28,7 +29,7 @@ while True:
 
     i_req = 5/(np.exp(-log(2)*(30/halflife)))
     print "the amount of ", isotope,"remaining after ", e_time," seconds is", i_remaining
-    print "the initial mass of ", isotope,"to ensure 5 g remains after half a minute is", i_req
+    print "the initial mass of", isotope,"to ensure 5 g remains after half a minute is", i_req
     
 #defines the array of independent variable on the x-axis
     X=np.linspace(0,11,11)
