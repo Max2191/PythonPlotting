@@ -28,8 +28,8 @@ while True:
 #calculates the initial amount of the isotope, i_req, necessry for 5g to be remaining after 30s has elapsed
 
     i_req = 5/(np.exp(-log(2)*(30/halflife)))
-    print "the amount of ", isotope,"remaining after ", e_time," seconds is", i_remaining
-    print "the initial mass of", isotope,"to ensure 5 g remains after half a minute is", i_req
+    print "the amount of", isotope,"remaining after", e_time,"seconds has elapsed is", i_remaining
+    print "the initial mass, in grams, of", isotope,"to ensure 5g remains after 30 seconds is", i_req
     
 #defines the array of independent variable on the x-axis
     X=np.linspace(0,11,11)
